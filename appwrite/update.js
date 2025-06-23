@@ -6,7 +6,7 @@ await utils.downloadFile(
 );
 await utils.downloadFile(
   "https://appwrite.io/install/env",
-  "./code/.env.example"
+  "./code/.env"
 );
 
 await utils.removeContainerNames("./code/docker-compose.yml");

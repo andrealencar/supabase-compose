@@ -76,7 +76,7 @@ mkdir -p "$dir_name" && cd "$dir_name" || { echo "❌ Failed to create/access di
 echo -e "\t• Copying docker-compose.yml"
 curl -sLo docker-compose.yml https://raw.githubusercontent.com/twentyhq/twenty/$branch/packages/twenty-docker/docker-compose.yml
 
-# Copy twenty/packages/twenty-docker/.env.example to .env
+# Copy twenty/packages/twenty-docker/.env to .env
 echo -e "\t• Setting up .env file"
 curl -sLo .env https://raw.githubusercontent.com/twentyhq/twenty/$branch/packages/twenty-docker/.env.example
 

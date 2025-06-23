@@ -36,7 +36,7 @@ fi
 
 if [ -f ".env.example" ]; then
   echo "Copying .env.example to .env..."
-  cp .env.example .env
+  cp .env .env
 else
   echo ".env.example file not found. Skipping .env reset step..."
 fi

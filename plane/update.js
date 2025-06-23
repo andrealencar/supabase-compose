@@ -7,7 +7,7 @@ await utils.cloneOrPullRepo({
 });
 
 await utils.copyDir("./repo/deploy/selfhost", "./code");
-await utils.renameFile("./code/variables.env", "./code/.env.example");
+await utils.renameFile("./code/variables.env", "./code/.env");
 
 await utils.removeContainerNames("./code/docker-compose.yml");
 await utils.removePorts("./code/docker-compose.yml");
